@@ -3,7 +3,28 @@
   z-index: -1;
   width: 100%;
 }
-.row {
-  margin-right: -199px;
-  margin-left: -199px;
+body {
+  width: 100%;
+  color: #555555;
+}
+ul {
+  list-style-type: none;
+  text-align: left;
+  display: block;
+  width: 650px;
+  padding: 0;
+  margin: 0 auto;
+}
+li {
+  margin: 20px;
+}
+
+.button-style {
+  margin: 20px 0;
+}
+.annoying-v {
+  display: inline;
+  position: relative;
+  top: 14px;
+  right: -2px;
 }

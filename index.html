@@ -24,98 +24,259 @@
     >
       <h1>International Law Resources</h1>
     </nav>
-    <div class="container search-all">
-      <div class="row">
-        <div class="col-md-2">
-          <div class="card search-card">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <form>
-                <input type="text" placeholder="search" />
-              </form>
+    <div class="card search-card">
+      <div class="card-body">
+        <h5 class="card-title">Search</h5>
+        <ul>
+          <li>
+            <input
+              id="citation"
+              type="text"
+              name="cit"
+              size="40"
+              maxlength="64"
+              autocomplete="off"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Citations"
+            />
+          </li>
+          <li>
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input
+                    id="party1"
+                    type="text"
+                    name="party1"
+                    size="30"
+                    maxlength="128"
+                    autocomplete="off"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Party 1"
+                  />
+                </div>
+                <span class="annoying-v">v</span>
+                <div class="col">
+                  <input
+                    type="text"
+                    name="party2"
+                    size="30"
+                    maxlength="128"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Party 2"
+                  />
+                </div>
+              </div>
+            </form>
+          </li>
+
+          <li>
+            <input
+              id="court"
+              type="text"
+              name="court"
+              size="48"
+              maxlength="128"
+              autocomplete="off"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Court"
+            />
+          </li>
+          <li>
+            <input
+              id="juris"
+              type="text"
+              name="juris"
+              size="48"
+              maxlength="128"
+              autocomplete="off"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Jurisdiction"
+            />
+          </li>
+          <li>
+            <input
+              id="article"
+              type="text"
+              name="article"
+              size="48"
+              maxlength="128"
+              autocomplete="off"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Article Title"
+            />
+          </li>
+          <li>
+            <input
+              id="author"
+              type="text"
+              name="author"
+              size="48"
+              maxlength="128"
+              autocomplete="off"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Author"
+            />
+          </li>
+
+          <li>
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input
+                    id="year"
+                    type="text"
+                    name="year1"
+                    size="4"
+                    maxlength="4"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Start Year"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    name="year2"
+                    size="4"
+                    maxlength="4"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="End Year"
+                  />
+                </div>
+              </div>
+            </form>
+          </li>
+          <li>
+            <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-label col-sm-3 pt-0">
+                  Search Options
+                </legend>
+                <div class="col-sm-9">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="gridRadios1"
+                      value="option1"
+                      checked
+                    />
+                    <label class="form-check-label" for="gridRadios1">
+                      Fuzzy Search
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="gridRadios2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="gridRadios2">
+                      Exact Search
+                    </label>
+                  </div>
+                  <div class="form-check disabled">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="gridRadios3"
+                      value="option3"
+                      disabled
+                    />
+                    <label class="form-check-label" for="gridRadios3">
+                      Third disabled option
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </li>
+
+          <li>
+            <input
+              id="cases-cited"
+              type="text"
+              name="cases-cited"
+              size="48"
+              maxlength="128"
+              autocomplete="off"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Cases Considered"
+            />
+          </li>
+          <li>
+            <form>
+              <div class="form-row">
+                <div class="col-6">
+                  <input
+                    id="legis-cited"
+                    type="text"
+                    name="legis-cited"
+                    size="38"
+                    autocomplete="off"
+                    maxlength="128"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Legislation Considered"
+                  />
+                </div>
+                <div class="col-3 offset-1">
+                  <input
+                    type="text"
+                    name="section"
+                    size="7"
+                    maxlength="20"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Section"
+                  />
+                </div>
+              </div>
+            </form>
+            <input
+              class="btn btn-info button-style"
+              type="submit"
+              value="Search"
+            />
+          </li>
+          <li>
+            <div class="row">
+              <div class="col-sm-7">
+                <select
+                  id="pet-select"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                >
+                  <option value="">--Please choose an option--</option>
+                  <option value="case-name">Case Name</option>
+                  <option value="citations">Citations</option>
+                  <option value="court">Court</option>
+                  <option value="jurisdictions">Jurisdictions</option>
+                  <option value="date">Date</option>
+                  <option value="full-text">Full Text</option>
+                </select>
+              </div>
+              <div class="col-sm-5">
+                <input type="submit" value="Add" class="btn btn-info" />
+                <input type="submit" value="Remove" class="btn btn-info" />
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card search-card">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <form>
-                <input type="text" placeholder="search" />
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card search-card">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <form>
-                <input type="text" placeholder="search" />
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card search-card">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <form>
-                <input type="text" placeholder="search" />
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card search-card">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <form>
-                <input type="text" placeholder="search" />
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card search-card">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <form>
-                <input type="text" placeholder="search" />
-              </form>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
     <div>
@@ -123,29 +284,37 @@
         <thead>
           <tr>
             <th scope="col">Case Name</th>
+            <th scope="col">Citations</th>
+            <th scope="col">Court</th>
+            <th scope="col">Jurisdictions</th>
             <th scope="col">Date</th>
-            <th scope="col">Summary</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Full Text</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
         </tbody>
       </table>
